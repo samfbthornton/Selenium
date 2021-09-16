@@ -34,6 +34,7 @@ public class SeleniumDemoTest {
 		inputPerAdd.sendKeys("Not here");
 		WebElement closeAd = this.driver.findElementByCssSelector("#close-fixedban");
 		closeAd.click();
+		this.driver.executeScript("window.scrollBy(0, 350)", "");
 		WebElement submit = this.driver.findElementByCssSelector("#submit");
 		submit.click();
 		WebElement name = this.driver.findElementByCssSelector("#name");
